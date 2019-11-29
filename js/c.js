@@ -55,10 +55,10 @@ function Circle(x, y, dx, dy, radius) {
     };
     this.update = function() {
         // 碰壁反方向移动
-        if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+        if (this.x + this.minRadius > innerWidth || this.x - this.minRadius < 0) {
             this.dx = -this.dx;
         }
-        if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+        if (this.y + this.minRadius > innerHeight || this.y - this.minRadius < 0) {
             this.dy = -this.dy;
         }
         // 移动
