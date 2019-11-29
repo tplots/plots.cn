@@ -31,27 +31,13 @@ window.addEventListener("resize", function() {
     init();
 });
 // var minRadius = 2;
-var colorArray = [
-    "#58D68D",
-    "#E67F22",
-    "#3598DB",
-    "#E84C3D",
-    "#9A59B5",
-    "#27AE61",
-    "#D25400",
-    "#BEC3C7",
-    "#297FB8",
-    "#FFFFCC",
-    "#CCFFFF",
-    "#CC3333",
-    "#FFFF00",
-    "#663366",
-    "#CC0033",
-    "#009966",
-    "#CCFF66",
-    "#336666",
-    "#0099CC"
-];
+function random(m, n) {
+    return Math.floor(Math.random() * (n - m)) + m;
+}
+var colorArray = [];
+for (var i = 0; i < 20; i++) {
+    colorArray.push("rgba(" + random(0, 255) + "," + random(0, 255) + "," + random(0, 255) + ",0.9)");
+}
 function Circle(x, y, dx, dy, radius) {
     this.x = x;
     this.y = y;
