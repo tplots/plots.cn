@@ -101,7 +101,7 @@ function Circle(x, y, dx, dy, radius) {
 var circleArray = [];
 function init() {
     circleArray = [];
-    for (var i = 0; i < 500; i++) {
+    for (var i = 0; i < 1200; i++) {
         var x = Math.random() * window.innerWidth;
         var y = Math.random() * window.innerHeight;
         var dx = Math.random() - 0.5;
