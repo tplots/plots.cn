@@ -38,7 +38,7 @@ function Circle(x, y, dx, dy, radius) {
     this.dx = dx;
     this.dy = dy;
     this.radius = radius;
-    this.maxRadius = radius * 200;
+    this.maxRadius = radius * 1000;
     this.minRadius = radius;
     this.bg = colorArray[Math.floor(Math.random() * colorArray.length)];
 
