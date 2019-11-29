@@ -1,8 +1,8 @@
-var canvas = document.querySelector('#canvas');
+var canvas = document.querySelector("#canvas");
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
-var ctx = canvas.getContext('2d');
+var ctx = canvas.getContext("2d");
 
 // ctx.strokeStyle = "#777";
 // ctx.arc(100,100,50,Math.PI/180*0,Math.PI/180*360,false);
@@ -19,32 +19,32 @@ var mouse = {
     x: undefined,
     y: undefined
 };
-window.addEventListener('mousemove', function(event) {
+window.addEventListener("mousemove", function(event) {
     mouse.x = event.x;
     mouse.y = event.y;
     // console.log(mouse);
 });
-window.addEventListener('resize', function() {
+window.addEventListener("resize", function() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
     init();
 });
-var maxRadius = 40;
 // var minRadius = 2;
-var colorArray = ['#58D68D', '#E67F22', '#3598DB', '#E84C3D', '#9A59B5', '#27AE61', '#D25400', '#BEC3C7', '#297FB8'];
+var colorArray = ["#58D68D", "#E67F22", "#3598DB", "#E84C3D", "#9A59B5", "#27AE61", "#D25400", "#BEC3C7", "#297FB8"];
 function Circle(x, y, dx, dy, radius) {
     this.x = x;
     this.y = y;
     this.dx = dx;
     this.dy = dy;
     this.radius = radius;
+    this.maxRadius = radius * 200;
     this.minRadius = radius;
     this.bg = colorArray[Math.floor(Math.random() * colorArray.length)];
 
     this.draw = function() {
         ctx.beginPath();
-        ctx.strokeStyle = '#777';
+        ctx.strokeStyle = "#777";
         // var color = Math.floor(Math.random()*100000);
         // ctx.fillStyle = "#"+color;
         // ctx.fillStyle = "#777";
@@ -66,7 +66,7 @@ function Circle(x, y, dx, dy, radius) {
         this.y += this.dy;
 
         if (mouse.x - this.x < 50 && mouse.x - this.x > -50 && mouse.y - this.y < 50 && mouse.y - this.y > -50) {
-            if (this.radius < maxRadius) {
+            if (this.radius < this.maxRadius) {
                 this.radius += 1;
             }
         } else if (this.radius > this.minRadius) {
@@ -81,7 +81,7 @@ function Circle(x, y, dx, dy, radius) {
 var circleArray = [];
 function init() {
     circleArray = [];
-    for (var i = 0; i < 300; i++) {
+    for (var i = 0; i < 500; i++) {
         var x = Math.random() * window.innerWidth;
         var y = Math.random() * window.innerHeight;
         var dx = Math.random() - 0.5;
