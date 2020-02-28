@@ -58,19 +58,19 @@
                 <h2 style="padding-left: 190px;">注册</h2>
                 <form class="form" style="text-align: center;">
                     <div class="col">
-                        <label><span>*</span>用户名</label><input />
+                        <label><span>*</span>用户名</label><input id="a" />
                     </div>
                     <div class="col">
-                        <label><span>*</span>密码</label><input />
+                        <label><span>*</span>密码</label><input id="b" type="password" />
                     </div>
                     <div class="col">
-                        <label><span>*</span>请再次输入密码</label><input />
+                        <label><span>*</span>请再次输入密码</label><input id="c" type="password" />
                     </div>
                     <div class="col">
-                        <label><span>*</span>手机号</label><input />
+                        <label><span>*</span>手机号</label><input id="d" />
                     </div>
                     <div class="col">
-                        <label><span>*</span>电子邮箱</label><input />
+                        <label><span>*</span>电子邮箱</label><input id="e" />
                     </div>
                 </form>
                 <button style="margin-left: 135px;" id="submit">立即注册</button>
@@ -81,8 +81,19 @@
     <script>
         $(function() {
             $("#submit").click(function() {
-                var index = parent.layer.getFrameIndex(window.name);
-                parent.layer.close(index); //关闭当前页
+                var a = $("#a").val();
+                var b = $("#b").val();
+                var c = $("#c").val();
+                var d = $("#d").val();
+                var e = $("#e").val();
+                if (!a || !b || !c || !d || !e) {
+                    alert("注册信息填写不完整,请补全后再次尝试!");
+                } else if (b !== c) {
+                    alert("两次密码输入不一致!");
+                } else {
+                    var index = parent.layer.getFrameIndex(window.name);
+                    parent.layer.close(index); //关闭当前页
+                }
             });
         });
     </script>
