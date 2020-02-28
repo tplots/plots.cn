@@ -38,7 +38,7 @@ p {     font-size: 14px;
 .section .page{margin:0 auto; width:880px;}
 .top{ position:relative;}
 .item{width:100%; height:1080px;}
-.owl-theme .owl-controls { margin-top: -130px; text-align: center; z-index: 555; position: relative; top: -320px; text-indent: 660px;}
+.owl-theme .owl-controls { margin-top: -240px; text-align: center; z-index: 555; position: relative; top: -320px; text-indent: 660px;}
 
 /* Section 0 * ---------------------------------------*/
 .section0{ position:relative;}
