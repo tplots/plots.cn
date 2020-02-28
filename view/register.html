@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            input,
+            button {
+                outline: none;
+            }
+            .form .col {
+                display: flex;
+                margin-bottom: 10px;
+            }
+            .form .col label {
+                width: 130px;
+                font-size: 14px;
+                text-align: right;
+                margin-right: 5px;
+                height: 32px;
+                line-height: 32px;
+            }
+
+            .form .col label span {
+                color: red;
+            }
+            .form .col input {
+                border: 1px solid #ccc;
+                height: 20px;
+                line-height: 20px;
+                padding: 6px;
+                border-radius: 5px;
+                width: 170px;
+            }
+            button {
+                border: 0;
+                padding: 10px;
+                background-color: #1b91ff;
+                color: #fff;
+                width: 180px;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:active {
+                opacity: 0.9;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="overflow: hidden;">
+            <div style="float: left;;width: 280px;text-align: center;">
+                <span>注册会员前请通过左边支付缴纳会员服务费，会员服务费每年99元!</span>
+                <br />
+                <img src="./img/pay.png" />
+            </div>
+            <div style="float: left;">
+                <h2 style="padding-left: 190px;">注册</h2>
+                <form class="form" style="text-align: center;">
+                    <div class="col">
+                        <label><span>*</span>用户名</label><input />
+                    </div>
+                    <div class="col">
+                        <label><span>*</span>密码</label><input />
+                    </div>
+                    <div class="col">
+                        <label><span>*</span>请再次输入密码</label><input />
+                    </div>
+                    <div class="col">
+                        <label><span>*</span>手机号</label><input />
+                    </div>
+                    <div class="col">
+                        <label><span>*</span>电子邮箱</label><input />
+                    </div>
+                </form>
+                <button style="margin-left: 135px;" id="submit">立即注册</button>
+            </div>
+        </div>
+    </body>
+    <script src="./js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function() {
+            $("#submit").click(function() {
+                var index = parent.layer.getFrameIndex(window.name);
+                parent.layer.close(index); //关闭当前页
+            });
+        });
+    </script>
+</html>

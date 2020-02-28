@@ -1,0 +1,215 @@
+/*首页样式*/
+.wl-header{ position:fixed; z-index: 666; width: 100%; background: #000000; height: 50px;top:0}
+.wl-hcontent{  width: 100%; height: 90px; overflow: hidden; margin: 0 auto; position: fixed; top: 50px; z-index: 888;background: url("../img/headbg.png")/*tpa=http://www.daye666.com/img/headbg.png*/;}
+.wl-headinfo{ width: 1000px; margin: 0 auto; height: 90px;}
+.wl-logo{float: left; width: 224px; height: 90px; background: url("../img/logo.png")/*tpa=http://www.daye666.com/img/logo.png*/ no-repeat; margin-top: 0px; margin-left: 8px;}
+.wl-tul{ float: left; height: 100%; margin-left: 30px;}
+.wl-tul li{ float: left; text-align: center; margin-right: 6px;}
+.wl-tul li a{ transition: all .2s linear; color: black; font-size: 16px; display: block; font-family: '微软雅黑'; height: 30px; line-height: 30px; width: 110px; margin-top: 34px; border: 1px solid transparent;}
+.wl-tul li a:hover{ color:gray;}
+.wl-tul li.wl-active{}
+.wl-tul li.wl-active a{color: #000000; border: 1px solid #000000; font-weight: bold;}
+.wl-us{ float:left; height:100%;margin-left: 8px;}
+.wl-us .us-info{ float: left; width: 85px; height: 35px; margin-top: 72px;}
+.wl-us .us-info a{ float: left; width: 85px; height: 35px; background:url("../img/down.png")/*tpa=http://www.daye666.com/img/down.png*/ 0px 0px no-repeat;transition: all .1s linear; }
+.wl-us .us-info a:hover{ opacity:.8}
+.wl-us .us-info a:active{ opacity:.9}
+
+/* Reset CSS * ---------------------------------------*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{padding: 0;margin: 0;}
+a{text-decoration:none;}
+table{border-spacing: 0;}
+fieldset,img{border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var{font-weight: normal;font-style: normal;}
+strong{font-weight: bold;}
+ol,ul{list-style: none;margin:0;padding:0;}
+caption,th{text-align: left;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size: 100%;margin:0;padding:0;color:#444;}
+q:before,q:after{content:'';}
+abbr,acronym{border: 0;}
+/* Custom CSS * ---------------------------------------*/
+body{font-family: arial,helvetica;color: #F2F2F2;}
+h1{font-size: 6em;}
+p {     font-size: 14px;
+    line-height: 25px;}
+
+.content{position: relative;top: 50%;transform: translateY(-50%);text-align: center;}
+.section{width:100%; height:100%; box-sizing:border-box; background:black;}
+.section .page{margin:0 auto; width:880px;}
+.top{ position:relative;}
+.item{width:100%; height:1080px;}
+.owl-theme .owl-controls { margin-top: -30px; text-align: center; z-index: 555; position: relative; top: -320px; text-indent: 660px;}
+
+/* Section 0 * ---------------------------------------*/
+.section0{ position:relative;}
+.section0 .ms_page{position: absolute; bottom: 0px; height: 300px;  width: 100%; left: 0; background: white;}
+.section0 .ms_page .ms_p{ width: 1000px; height: 300px; background: white;  margin:0 auto; margin-top: 29px; text-align: center;}
+.section0 .ms_page .ms_p1{margin-left: 0;}
+.section0 .ms_page .ms_p img{ float:left; margin-left: 20px;}
+.section0 .ms_page .ms_p img:first-child{margin-left: 0;}
+.section0 .ms_page .ms_p h3{ font-size: 24px; color: black; font-family: '微软雅黑'; margin-bottom: 25px;}
+.section0 .ms_page .ms_p p{ color: #808080; font-size: 12px; line-height: 25px; font-family: '微软雅黑';}
+.down_ruanjian{ background: url("../img/down_lunbo.png")/*tpa=http://www.daye666.com/img/down_lunbo.png*/ 0px 0px no-repeat; width: 211px; height: 59px; position: absolute;}
+.down_oDiv{ width: 1000px; margin: 0 auto; height: 700px; position: relative;}
+.down_oDiv1 .down_ruanjian{top: 705px; left: 160px;}
+.down_oDiv2 .down_ruanjian{top: 700px; left: 160px;}
+.down_oDiv3 .down_ruanjian{top: 700px; left: 140px;}
+.down_oDiv4 .down_ruanjian{top: 700px; left: 150px;}
+.down_oDiv5 .down_ruanjian{ background: url("../img/down_lunbo2.png")/*tpa=http://www.daye666.com/img/down_lunbo2.png*/ 0px 0px no-repeat;top: 588px; left: 355px;}
+
+/* Section 1 * ---------------------------------------*/
+
+/* Section 2 * ---------------------------------------*/
+.section{overflow: hidden;}
+.page{-webkit-transition: linear all .5s;}
+.page h3{padding-top: 85px;padding-left: 35px;font-size: 32px;font-weight: bold;margin-bottom: 20px;font-family: "microsoft yahei";line-height: 50px;}
+.page h3,.page_con p{color: #4d4d4d;}
+.section3 .page h3,.section3 .page_con p{color: #fff;font-family: "microsoft yahei";}
+.page_con p{font-size: 15px;margin-bottom: 16px;line-height: 40px;}
+.section2{background: url("../img/section2_bg.jpg")/*tpa=http://www.daye666.com/img/section2_bg.jpg*/ no-repeat center; height:1182px;    margin-bottom: -72px; z-index: 1; position: relative;}
+.page_con{padding-left: 37px;}
+
+/* Section 3 * ---------------------------------------*/
+.section3{background: url("../img/section03_bg.png")/*tpa=http://www.daye666.com/img/section03_bg.png*/ no-repeat center;}
+.section3 .page{background: url("../img/section03_con.png")/*tpa=http://www.daye666.com/img/section03_con.png*/ no-repeat center;}
+
+/* Section 4 * ---------------------------------------*/
+.section4{background: url("../img/section04_bg.png")/*tpa=http://www.daye666.com/img/section04_bg.png*/ no-repeat center;}
+.section4 .page{background: url("../img/section4_con.png")/*tpa=http://www.daye666.com/img/section4_con.png*/ no-repeat center;}
+
+/* Section 5  Section 6 * ---------------------------------------*/
+.section6, .section5{background: white;}
+.img_warp,.info_intr{-webkit-transition: all linear .5s;}
+.section5 .img_warp img,.section6 .img_warp img{width:562px;height:400px;margin-top: 60px;}
+.section5 .img_warp,.section6 .img_warp{}
+.section5 .item,.section6 .item{display: table;height: 540px;}
+.section5 .item-info{ width:1060px; margin: 0 auto; overflow: hidden}
+.section5 .info_intr, .section5 .img_warp,.section6 .info_intr, .section6 .img_warp{ float:left;}
+.img_warp{    width: 600px;margin-left: -90px;}
+.info_intr{ padding-top: 140px;}
+.section5 .info_intr h4,.section6 .info_intr h4{font-size: 28px;color: #3b3b3b;margin-bottom: 10px;line-height: 40px;font-family: "microsoft yahei";font-weight: bold;}
+.section5 .info_intr p,.section6 .info_intr p{font-size: 16px;color: #4d4d4d;margin-top: 6px;font-family: "microsoft yahei";line-height: 60px;}
+.item2{ background: #f2f2f2;}
+.oDiv2{ background: url("../img/section05_bg.jpg")/*tpa=http://www.daye666.com/img/section05_bg.jpg*/ center center no-repeat; width:100%; height: 820px; }
+
+/*关于我们*/
+.about{ width:100%; height:auto;}
+.about img{}
+.about p{ width: 940px; margin: 80px auto; font-size: 15px; color: #4f4f4f; font-family: '微软雅黑'; text-align: left;  line-height: 40px;}
+
+
+/*底部*/
+.footer{ background: white; height: 310px; width: 100%; overflow: hidden;}
+.fot_content{ width:1024px; margin:0 auto;    position: relative;}
+.fot_oDiv1 .fot_content{width:1120px; border-top: 1px solid #B3B3B3;}
+.fot_oDiv1 .fot_content p{ color: #808080; padding-left: 40px; padding-top: 25px;}
+.fot_oDiv1{ width:100%; }
+.fot_oDiv1 i{ background:url("../img/footer_01.png")/*tpa=http://www.daye666.com/img/footer_01.png*/ 0px 0px no-repeat; float:left; width:278px; height:38px;margin-top: 19px;left: -12px;position: relative;}
+.fot_oDiv2{width:100%; height:230px;}
+.fot_oD1{ float: left; width: 330px; height: 170px;}
+.oD1_top {margin-top: 25px; margin-bottom: 17px;}
+.oD1_top p{color: #4D4D4D; font-size: 12px; font-family: '微软雅黑'; margin-right: 24px; width: 100%; text-align: center;    }
+.oD1_top i{ background:url("../img/footer_01.jpg")/*tpa=http://www.daye666.com/img/footer_01.jpg*/ 0px 0px no-repeat; display: block;margin: 0 auto; width:201px; height:69px;}
+.oD1_btm{}
+.oD1_btm a{ background: url("../img/help_btn.png")/*tpa=http://www.daye666.com/img/help_btn.png*/ 0px 0px no-repeat; width:153px; height: 47px; display: block;margin: 0 auto;}
+.fot_oD2{ float: left; width: 370px; height: 170px;}
+.oD2_btm{ margin-top: 24px; margin-top: 48px;}
+.oD2_btm p{ font-size: 12px;color: #808080; line-height: 30px; }
+.fot_oD3{ float: left;width:80px; height: 170px; text-align:center;margin-right: 180px;margin-top: 30px;}
+.fot_oD3>img{ width: 80px; height: 80px; margin-top: 20px;}
+.fot_oD3>span{ color: black; font-size: 12px; font-family: '微软雅黑'; display: block; margin-top: 8px;}
+.qq_zx { position: absolute; width: 35px; height: 30px; top: 24px; left: -6px;z-index: 6; }
+
+
+/*help*/
+.help_center{   width: 100%;overflow: hidden;}
+.help_con{width: 1007px;margin: 0 auto;      height: 100%;    margin-top: -60px;
+    position: relative;}
+.help_con .head{height: 56px;    line-height: 56px;}
+.help_con .head h2{float: left;font-family: "microsoft yahei";margin-left: 25px;font-size: 24px;}
+.help_con .head .concat{float: right;font-size: 40px;color: #808080;    margin-top: 10px;}
+.help_con .head .concat span{display: inline-block;width: 235px;height: 30px;background: url("../img/footer_01.png")/*tpa=http://www.daye666.com/img/footer_01.png*/ no-repeat;background-position: -42px -5px; float:left;}
+.help_con .head .concat a{display: inline-block;height: 35px;width: 37px;background: url("../img/footer_01.png")/*tpa=http://www.daye666.com/img/footer_01.png*/ no-repeat;float: left;}
+.help_con .head .concat a{background-position: -5px -5px;}
+.help_con .head .concat a:hover{opacity: .4;}
+.help_con .sidebar{overflow: hidden;clear: both;float: left;margin-right: 20px;height: 95%;background: #f2f2f2;padding-top: 3px;min-height: 890px; }
+.help_con .sidebar li{position: relative;}
+.help_con .sidebar li .this_con{position: absolute;left: 200px;top: 0;display: none;}
+.help_con .sidebar li a{display: block;height: 60px;line-height: 60px;text-align: left;color: #4d4d4d;background: #f2f2f2;width: 300px;text-indent: 25px;font-family: "microsoft yahei";}
+.help_con .sidebar li a:hover,.help_con .sidebar li a.active{background: #fff;color: #000;}
+.show_navItem{float: left;width: 645px;color: #666;padding: 10px 20px;margin: 30px 0;}
+.help_con .sidebar li a,
+.help_con .head .concat a
+{-webkit-transition: all .2s linear;}
+#contents img{ width:100% !important; }
+@media screen and (max-width: 1600px){
+	.stitle h3{font-size: 24px;}
+	.stitle h5{font-size: 18px;}
+	.stitle p{font-size: 14px;line-height: 22PX;}
+	.stitle{top: 150px;}
+	.sDiv{transform: scale(.8);transform-origin: bottom;}
+	.s3_oDivs{transform: scale(0.5);transform-origin: bottom;}
+	.p_active .s3_oDivs{ bottom: -60px; transform: scale(0.7);transform-origin: bottom;}
+}
+@media screen and (max-width: 1366px){
+	.stitle h3{font-size: 22px;}
+	.stitle h5{font-size: 16px;}
+	.stitle p{font-size: 12px;line-height: 18PX;}
+	.stitle{top: 115px;}
+	.sDiv{transform: scale(.66);transform-origin: bottom;}
+	.s4_oDivs{top: 614px;}
+	.p_active .s3_oDivs{ bottom: -30px; transform: scale(0.7);}
+}
+.yd_thisYear i,.middle a,.help_way a,.help2_way a,.yd_gxYear,.yd_thisYear{-webkit-transition: all .2s linear;}
+.to_toggle{position: relative;
+    z-index: 2;
+    width: 100%;
+    border-bottom: 2px solid #a3a19f;}
+.to_toggle,.to_toggle h3,.to_toggle a {height: 80px;line-height: 80px;background: #c7c5c2;font-size: 14px;color: #808080 !important;}
+.middle{width: 1200px;margin: 0 auto;}
+.middle h3{float: left;margin-right: 100px;    margin-left: 55px;background: transparent;}
+.middle a{-webkit-transition: all .2s linear;padding: 0 20px;display: inline-block;background: transparent;}
+.middle a:hover, .middle .active{font-size: 16px;color: #333 !important;}
+
+.yd_content{background: #ececec;overflow: hidden;}
+.yd_con{width: 900px;margin: 0 auto;margin-top: 35px;padding-bottom: 75px;    min-height: 800px;}
+.yd_thisYear {    display: block;
+    width: 30px;
+    height: 30px;
+    background: #37b5ce;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff !important;
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 auto;
+    cursor:default;
+    }
+.yd_thisYear i{display: inline-block;width: 25px; height: 10px; background: url("../img/sprit.png")/*tpa=http://www.daye666.com/img/sprit.png*/ no-repeat;  background-position:-63px -85px; top: -14px; position: relative;-webkit-transform-origin: center;}
+
+.yd_gx_rz{border: 1px solid #adadad;padding: 10px 30px 40px 15px ;border-radius: 6px; font-size: 15px;line-height: 22px;}
+.yd_dot{display: inline-block;height: 20px;width: 20px;background: #37b5ce;border: 4px solid #ececec;position: absolute;top: 36px;border-radius: 50%;}
+.yd_gxYear{overflow: hidden;}
+.yd_gxYear ul{}
+.yd_gxYear li{color: #939393;position: relative;}
+.yd_gxYear li:nth-child(2n){    border-right: 2px solid #adadad; margin-right: 448px; padding-right: 40px;    margin-top: -44px;}
+.yd_gxYear li:last-child{padding-bottom: 30px;}
+.yd_triangle{display: inline-block;width: 22px;height: 33px;background: url("../img/sprit.png")/*tpa=http://www.daye666.com/img/sprit.png*/ no-repeat;position: absolute;top: 20px;}
+.yd_gxYear li:nth-child(2n) .yd_dot{right: -15px;}
+.yd_gxYear li:nth-child(2n) .yd_triangle{right: -15px;background-position: -30px -105px;right: 19px;}
+.yd_gxYear li:nth-child(2n+1){    border-left: 2px solid #adadad; margin-left: 450px; padding-left: 40px;padding-top: 20px;}
+.yd_gxYear li:nth-child(2n+1) .yd_dot{left: -15px;top: 53px;}
+.yd_gxYear li:nth-child(2n+1) .yd_triangle{left: -15px;background-position: 0 -105px;left: 22px;    top: 40px;}
+.yd_gxYear li h4{color: #37b5ce;font-size: 24px;margin-bottom: 14px;}
+.yd_gxYear li h4 span{color: #37b5ce;font-size: 20px;margin-left: 10px;}
+.showLogo{background: #d5cf1f;}
+.yd_thisYear.showLogo i{background-position:-62px -113px }
+
+/*头部样式*/
+.wl-top{width:1000px; margin: 0 auto;}
+.top_oDiv1{ color: #808080; font-size: 14px; line-height: 50px; margin-right: 18px;}
+.top_oDiv2{display: inline-block;width: 1px; height: 19px; background: #808080; position: relative; top: 5px;}
+.top_oDiv3{ color: #00FFFF; font-size: 14px; margin-left: 18px;}
+.top_oDiv4{float: right; display: inline-block; background: url("../img/down.png")/*tpa=http://www.daye666.com/img/down.png*/ 0px 0px no-repeat; width: 82px; height: 32px; position: relative; top: 10px; margin-left: 32px;}
+.top_oDiv5{float: right; color: white; line-height: 50px; font-size: 14px;}
