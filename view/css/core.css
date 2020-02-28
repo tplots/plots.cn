@@ -2,7 +2,7 @@
 .wl-header{ position:fixed; z-index: 666; width: 100%; background: #000000; height: 50px;top:0}
 .wl-hcontent{  width: 100%; height: 90px; overflow: hidden; margin: 0 auto; position: fixed; top: 50px; z-index: 888;background: url("../img/headbg.png")/*tpa=http://www.daye666.com/img/headbg.png*/;}
 .wl-headinfo{ width: 1000px; margin: 0 auto; height: 90px;}
-.wl-logo{float: left; width: 224px; height: 90px; background: url("../img/logo.png")/*tpa=http://www.daye666.com/img/logo.png*/ no-repeat; margin-top: 0px; margin-left: 8px;}
+.wl-logo{float: left; width: 224px; height: 90px; background: url("../img/logo.png")/*tpa=http://www.daye666.com/img/logo.png*/ no-repeat center;background-size:  120px 50px; margin-top: 0px; margin-left: 8px;}
 .wl-tul{ float: left; height: 100%; margin-left: 30px;}
 .wl-tul li{ float: left; text-align: center; margin-right: 6px;}
 .wl-tul li a{ transition: all .2s linear; color: black; font-size: 16px; display: block; font-family: '微软雅黑'; height: 30px; line-height: 30px; width: 110px; margin-top: 34px; border: 1px solid transparent;}
@@ -43,7 +43,7 @@ p {     font-size: 14px;
 /* Section 0 * ---------------------------------------*/
 .section0{ position:relative;}
 .section0 .ms_page{position: absolute; bottom: 0px; height: 300px;  width: 100%; left: 0; background: white;}
-.section0 .ms_page .ms_p{ width: 1000px; height: 300px; background: white;  margin:0 auto; margin-top: 29px; text-align: center;}
+.section0 .ms_page .ms_p{ width: 1000px; height: 270px; background: white;  margin:0 auto; margin-top: 29px; text-align: center;}
 .section0 .ms_page .ms_p1{margin-left: 0;}
 .section0 .ms_page .ms_p img{ float:left; margin-left: 20px;}
 .section0 .ms_page .ms_p img:first-child{margin-left: 0;}
@@ -66,7 +66,8 @@ p {     font-size: 14px;
 .page h3,.page_con p{color: #4d4d4d;}
 .section3 .page h3,.section3 .page_con p{color: #fff;font-family: "microsoft yahei";}
 .page_con p{font-size: 15px;margin-bottom: 16px;line-height: 40px;}
-.section2{background: url("../img/section2_bg.jpg")/*tpa=http://www.daye666.com/img/section2_bg.jpg*/ no-repeat center; height:1182px;    margin-bottom: -72px; z-index: 1; position: relative;}
+/* .section2{background: url("../img/section2_bg.jpg") no-repeat center; height:1182px;    margin-bottom: -72px; z-index: 1; position: relative;} */
+.section2{background-color: #f2f2f2;}
 .page_con{padding-left: 37px;}
 
 /* Section 3 * ---------------------------------------*/
@@ -88,7 +89,7 @@ p {     font-size: 14px;
 .img_warp{    width: 600px;margin-left: -90px;}
 .info_intr{ padding-top: 140px;}
 .section5 .info_intr h4,.section6 .info_intr h4{font-size: 28px;color: #3b3b3b;margin-bottom: 10px;line-height: 40px;font-family: "microsoft yahei";font-weight: bold;}
-.section5 .info_intr p,.section6 .info_intr p{font-size: 16px;color: #4d4d4d;margin-top: 6px;font-family: "microsoft yahei";line-height: 60px;}
+.section5 .info_intr p,.section6 .info_intr p{font-size: 16px;color: #4d4d4d;margin-top: 6px;font-family: "microsoft yahei";line-height: 30px;max-width:500px}
 .item2{ background: #f2f2f2;}
 .oDiv2{ background: url("../img/section05_bg.jpg")/*tpa=http://www.daye666.com/img/section05_bg.jpg*/ center center no-repeat; width:100%; height: 820px; }
 
