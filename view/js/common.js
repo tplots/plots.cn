@@ -5,7 +5,7 @@ $(function() {
             type: 2,
             shadeClose: true,
             title: "注册",
-            area: ["650px", "410px"],
+            area: ["650px", "610px"],
             content: "./register.html"
         });
     });
