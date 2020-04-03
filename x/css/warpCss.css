@@ -1,0 +1,55 @@
+.warpBox{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background:url('../images/warpbg.jpg') no-repeat;
+  background-size: 100% 100%;
+}
+.phone{
+  position: absolute;
+  left:0;
+  width: 100%;
+  text-align: center;
+  animation: 1s phone;
+}
+@keyframes phone {
+  0%{
+    left: -100%;
+  }
+  100%{
+    left: 0;
+  }
+}
+.phone img{
+  width: 5rem;
+  margin-bottom: .5rem;
+}
+.but span{
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  background: #00955d;
+  border-radius: 1rem;
+  font-size: .3rem;
+  color: #fff;
+}
+.tips{
+  display: none;
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left:0;
+  top:0;
+  background: rgba(0,0,0,.3)
+}
+.tips p{
+  background: #343434;
+  color: #888;
+  font-size: .28rem;
+  line-height: .5rem;
+  padding: .3rem .5rem;
+}

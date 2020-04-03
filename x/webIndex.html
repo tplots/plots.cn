@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/Library.css" />
+        <link rel="stylesheet" href="./css/webCss.css" />
+        <title>首页</title>
+    </head>
+    <body>
+        <div class="webBox">
+            <img class="phone" src="./images/phone.png" alt="" />
+            <div class="cont">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" />
+                </div>
+                <div class="title">
+                    <p class="name">阅读温暖生活</p>
+                    <p class="tips">西西弗官方APP，随时随地都可以逛的西西弗书店</p>
+                </div>
+                <div class="butlist">
+                    <div class="but">
+                        <img src="./images/icon1.png" alt="" />
+                        <span class="floatRight" onclick="download(1)">iOS 版</span>
+                    </div>
+                    <div class="but">
+                        <img src="./images/icon2.png" alt="" />
+                        <span class="floatRight" onclick="download(2)">Android 版</span>
+                    </div>
+                    <div class="code">
+                        <img class="codeImg" src="./images/code.png" alt="" />
+                        <img src="./images/icon3.png" alt="" />
+                    </div>
+                </div>
+                <div class="contact">
+                    <p>sisyphe.com.cn</p>
+                    <div class="conticon">
+                        <img src="./images/icon4.png" alt="" />
+                        <img src="./images/icon5.png" alt="" />
+                        <img src="./images/icon6.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            function download(value) {
+                if (value === 2) {
+                    window.location.href = "https://updateapp.sisyphe.cn/update/sisyphe_app.apk";
+                } else {
+                    window.location.href = "https://itunes.apple.com/app/1493146022";
+                }
+            }
+        </script>
+    </body>
+</html>

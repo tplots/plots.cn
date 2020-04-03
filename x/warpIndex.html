@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/Library.css" />
+        <link rel="stylesheet" href="./css/warpCss.css" />
+        <script src="./js/flexible.js" charset="utf-8"></script>
+        <title>首页</title>
+    </head>
+
+    <body>
+        <div class="warpBox">
+            <div class="phone">
+                <img src="./images/phoneWarp.png" alt="" />
+                <div class="but">
+                    <span onclick="download()">下 载</span>
+                </div>
+            </div>
+            <div class="tips">
+                <p>点击右上角，然后在弹出的菜单中，点击浏览器中打开，即可下载安装</p>
+            </div>
+        </div>
+        <script type="text/javascript">
+            window.onload = function() {
+                if (isWeiXin()) {
+                    let tips = document.querySelector(".tips");
+                    let but = document.querySelector(".but span");
+
+                    document.title = "请在浏览器打开";
+                    tips.style.display = "block";
+                    but.style.display = "none";
+                }
+
+                let phone = document.querySelector(".phone");
+                let phoneHeight = phone.offsetHeight;
+                let winHeight = document.documentElement.clientHeight;
+                let resTop = (winHeight - phoneHeight) / 2;
+                phone.style.top = resTop + "px";
+            };
+            // 下载
+            function download() {
+                let u = navigator.userAgent;
+                let isAndroid = u.indexOf("Android") > -1 || u.indexOf("Linux") > -1; //如果输出结果是true就判定是android终端或者uc浏览器
+                let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //根据输出结果true或者false来判断ios终端
+
+                // let url = isAndroid ? "https://updateapp.sisyphe.cn/update/sisyphe_app.apk" : isiOS ? "itms-apps://itunes.apple.com/app/1493146022" : "";
+                let url = isiOS ? "itms-apps://itunes.apple.com/app/1493146022" : "https://updateapp.sisyphe.cn/update/sisyphe_app.apk";
+                window.open(url);
+            }
+
+            // 微信
+            function isWeiXin() {
+                let ua = window.navigator.userAgent.toLowerCase();
+                if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>
