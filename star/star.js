@@ -12,7 +12,7 @@ function Star(radius, lineWidth, fillStyle, strokeStyle) {
     // 小圆大小
     this.radius = radius || 10;
     // 半径累加还是减
-    this.factor = 0.1;
+    this.factor = 0.25;
 }
 Star.prototype = {
     //r：小圆半径，R：大圆半径，x：圆心x左边，y：圆心y坐标,rot: 旋转角度
@@ -34,11 +34,12 @@ Star.prototype = {
         ctx.stroke();
     },
     update: function () {
-        if (this.radius > 13 || this.radius < 10) {
+        if (this.radius > 18 || this.radius < 10) {
             this.factor = -this.factor;
         }
         this.radius += this.factor;
-        this.draw(this.radius, 0, 300, 300);
+        this.rot += 0.5;
+        this.draw(this.radius, this.rot, 300, 300);
     },
 };
 
