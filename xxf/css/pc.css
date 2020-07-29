@@ -1,0 +1,112 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+.content .to-app {
+    display: none;
+    /* width: 100%; */
+    background-color: #f8f6f7;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    text-align: left;
+}
+.content .to-app img {
+    width: 40px;
+}
+.content .to-app span {
+    line-height: 18px;
+    margin-left: 10px;
+    font-size: 12px;
+    flex: 1;
+}
+.content .to-app span i {
+    font-size: 16px;
+    line-height: 22px;
+}
+.content .to-app a {
+    text-decoration: none;
+    color: #2b83d0;
+}
+.content .logo {
+    margin-bottom: 27px;
+}
+.content .logo img {
+    height: 60px;
+}
+.content .title {
+    margin-bottom: 69px;
+}
+.content .title img {
+    width: 245px;
+    margin-bottom: 28px;
+}
+.content .title p {
+    color: #ccc;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+}
+.content .app_img {
+    margin-bottom: 68px;
+}
+.content .app_img img {
+    width: 322px;
+    height: 534px;
+    vertical-align: middle;
+}
+.content .download input {
+    width: 600px;
+    height: 60px;
+    background-color: #3a624c;
+    color: #fff;
+    border: 0;
+    margin: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.content .download input:active {
+    opacity: 0.9;
+}
+
+@media (max-width: 660px) {
+    .content {
+        padding: 0;
+    }
+    .content .to-app {
+        display: flex;
+    }
+    .content .logo img {
+        height: 40px;
+    }
+    .content .title {
+        margin-bottom: 35px;
+    }
+    .content .title img {
+        height: 32px;
+        width: 192px;
+        margin-bottom: 20px;
+    }
+    .content .app_img img {
+        width: 51.2%;
+        height: 85.3%;
+    }
+    .content .download {
+        position: absolute;
+        bottom: 0;
+        padding: 10px 0;
+        width: 100%;
+        /* border-top: 1px solid #ccc; */
+        box-shadow: 0 0 10px #f6f6f6;
+    }
+    .content .download input {
+        width: 91.5%;
+        font-size: 16px;
+        height: 44px;
+    }
+}
