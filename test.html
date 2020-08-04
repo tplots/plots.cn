@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            body {
+                height: 2000px;
+            }
+            p {
+                margin-top: 500px;
+                font-size: 24px;
+                margin-left: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <p>测试一下</p>
+        <script>
+            window.onscroll = function () {
+                //为了保证兼容性，这里取两个值，哪个有值取哪一个
+                //scrollTop就是触发滚轮事件时滚轮的高度
+                var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                if (scrollTop < 300) {
+                    const p = document.querySelector("p");
+                    p.style.fontSize = 24 - (scrollTop / 300) * 12 + "px";
+                    p.style.marginLeft = 200 - (scrollTop / 300) * 200 + "px";
+                }
+            };
+        </script>
+    </body>
+</html>
