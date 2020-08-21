@@ -1,0 +1,198 @@
+.webBox {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: url("../images/bg1.jpg") no-repeat;
+    background-size: 100% 100%;
+    min-width: 1200px;
+    min-height: 900px;
+}
+.phone {
+    position: absolute;
+    width: auto;
+    height: 145vh;
+    right: -10vw;
+    top: -23vh;
+    opacity: 1;
+    animation: 1s phone;
+}
+@keyframes phone {
+    0% {
+        right: -100%;
+    }
+    100% {
+        right: -10vw;
+        opacity: 1;
+    }
+}
+.cont {
+    position: absolute;
+    top: 10vh;
+    left: 13vw;
+    opacity: 1;
+    animation: 1s cont;
+}
+@keyframes cont {
+    0% {
+        top: -100%;
+        opacity: 0;
+    }
+    100% {
+        top: 10vh;
+        opacity: 1;
+    }
+}
+.logo {
+    width: 10vw;
+    margin-bottom: 10vh;
+}
+.title {
+    margin-bottom: 8vh;
+}
+.title p {
+    display: block;
+    color: #444;
+    font-size: 0.97vw;
+    font-weight: bold;
+    margin-top: 0.5vw;
+}
+.title .name {
+    font-size: 3.6vw;
+    font-weight: bold;
+    color: #004e2a;
+}
+.butlist {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6vh;
+    justify-content: space-between;
+}
+.butlist .but {
+    width: 10vw;
+    overflow: hidden;
+    height: 2.5vw;
+    background: #004e2a;
+    padding: 0 0.8vw;
+    border-radius: 10vw;
+    font-size: 1vw;
+    font-weight: bold;
+    line-height: 2.5vw;
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+}
+.butlist .but:hover {
+    box-shadow: 0 0 10px #000;
+    transition: 0.3s;
+}
+.butlist > div {
+    margin-right: 0.8vw;
+    cursor: pointer;
+}
+.butlist .but img {
+    width: 1.2vw;
+    margin-top: -0.4vw;
+}
+
+.butlist .but .codeImg {
+    opacity: 0;
+    position: absolute;
+    bottom: -11vw;
+    left: 0vw;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #666;
+    transition: 1s;
+    z-index: 1000;
+}
+
+.butlist .but:hover {
+    overflow: initial;
+}
+.butlist .but:hover .codeImg {
+    opacity: 1;
+}
+
+.butlist .code {
+    position: relative;
+}
+.butlist .code:hover .codeImg {
+    opacity: 1;
+    transition: 1s;
+}
+.butlist .code img {
+    width: 2vw;
+}
+.butlist .code .codeImg {
+    opacity: 0;
+    position: absolute;
+    bottom: -11vw;
+    left: -4vw;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #666;
+    z-index: 1000;
+}
+.contact p {
+    font-size: 14px;
+    margin: 0.5vw 0;
+}
+
+.conticon {
+    display: flex;
+    justify-content: left;
+}
+.conticon .img {
+    position: relative;
+    overflow: hidden;
+}
+.conticon .icon {
+    width: 26px;
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.conticon .img .codeImg {
+    opacity: 0;
+    position: absolute;
+    bottom: -11vw;
+    left: -3vw;
+    width: 10vw;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #666;
+    transition: 1s;
+    z-index: 1000;
+}
+
+.conticon .img:hover {
+    overflow: initial;
+}
+.conticon .img:hover .codeImg {
+    opacity: 1;
+}
+
+.footer {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 230px;
+    font-size: 12px;
+}
+
+.footer a {
+    color: #c2c2c2;
+    display: inline-block;
+    text-decoration: none;
+    height: 20px;
+    line-height: 20px;
+}
+
+.footer p {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    margin: 0px 0px 0px 5px;
+    color: #c2c2c2;
+}

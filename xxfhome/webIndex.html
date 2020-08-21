@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./css/Library.css" />
+        <link rel="stylesheet" href="./css/webCss.css" />
+        <title>首页</title>
+    </head>
+    <body>
+        <div class="webBox">
+            <img class="phone" src="./images/phone.png" alt="" />
+            <div class="cont">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="" />
+                </div>
+                <div class="title">
+                    <p class="name">阅读温暖生活</p>
+                    <p class="tips">西西弗官方APP，随时随地都可以逛的西西弗书店</p>
+                </div>
+                <div class="butlist">
+                    <div class="but">
+                        <img src="./images/icon1.png" alt="" />
+                        <span class="floatRight" style="margin-right: 2vw;" onclick="download(1)">iOS 版</span>
+                        <img class="codeImg" src="./images/code.png" alt="" />
+                    </div>
+                    <div class="but">
+                        <img src="./images/icon2.png" alt="" />
+                        <span class="floatRight" style="margin-right: 0.6vw;" onclick="download(2)">Android 版</span>
+                        <img class="codeImg" src="./images/code.png" alt="" />
+                    </div>
+                    <!-- <div class="code">
+                        <img class="codeImg" src="./images/code.png" alt="" />
+                        <img src="./images/icon3.png" alt="" />
+                    </div> -->
+                </div>
+                <div class="contact">
+                    <p>sisyphe.com.cn</p>
+                    <div class="conticon">
+                        <div class="img">
+                            <a href="https://weibo.com/sisyphe" target="_blank"><img class="icon" src="./images/icon4.png" alt="" /></a>
+                        </div>
+                        <div class="img">
+                            <img class="icon" src="./images/icon5.png" alt="" />
+                            <img class="codeImg" src="./images/attention_06.png" alt="" />
+                        </div>
+                        <!-- <img src="./images/icon6.png" alt="" /> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div style="margin: 0 auto; height: 20px; width: 500px;">
+                <a target="_blank" href="http://www.beian.miit.gov.cn/"> <p>渝ICP备20001350号-1</p></a>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=50010302002809">
+                    <img src="./images/gonganbeian.png" style="float: left; width: 20px;" />
+                    <p>渝公网安备 50010302002809号</p>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            if (!IsPC()) {
+                window.location.href = "https://m.sisyphe.cn/";
+            }
+            function download(value) {
+                // if (value === 2) {
+                //     window.location.href = "https://updateapp.sisyphe.cn/update/sisyphe_app.apk";
+                // } else {
+                //     window.location.href = "https://itunes.apple.com/app/1493146022";
+                // }
+            }
+            function IsPC() {
+                var userAgentInfo = navigator.userAgent;
+                var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+                var flag = true;
+                for (var v = 0; v < Agents.length; v++) {
+                    if (userAgentInfo.indexOf(Agents[v]) > 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                return flag;
+            }
+        </script>
+    </body>
+</html>
