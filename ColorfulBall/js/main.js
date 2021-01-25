@@ -20,7 +20,7 @@ function ColorfulBall() {
     this.circleArray = [];
     window.addEventListener("click", function (event) {
         event.preventDefault();
-        const ballSize = 10 + Math.floor(Math.random() * 20);
+        const ballSize = 20 + Math.floor(Math.random() * 20);
         for (let i = 0; i < ballSize; i++) {
             _this.circleArray.push(new Circle(event.clientX, event.clientY, _this.ctx));
         }
@@ -47,24 +47,29 @@ function Circle(x, y, ctx) {
     this.y = y;
     this.dx = Math.random() * 20 - 10;
     this.dy = Math.random() * 20 - 10;
-    this.radius = Math.random() * 5 + 5;
+    this.maxRadius = Math.random() * 5 + 5;
+    this.radius = this.maxRadius;
     // 移动次数(移动到time次则停止移动)
-    this.time = 20;
+    this.time = 30;
+    this.curTime = 0;
     this.ctx = ctx;
     // 代表是否执行完毕
     this.done = false;
 
     // const colorArray = ["rgb(88,214,141)", "rgb(230,127,34)", "rgb(53,152,219)", "rgb(53,152,219)", "rgb(154,89,181)", "rgb(39,174,97)", "rgb(210,84,0)", "rgb(190,195,199)", "#297FB8", "#FFFFCC", "#CCFFFF", "#CC3333", "#FFFF00", "#663366", "#CC0033", "#009966", "#CCFF66", "#336666", "#0099CC"];
-    const colorArray = ["88,214,141", "230,127,34", "53,152,219", "53,152,219", "154,89,181", "39,174,97", "210,84,0", "190,195,199"];
+    var colorArray = ["#58D68D", "#E67F22", "#3598DB", "#E84C3D", "#9A59B5", "#27AE61", "#D25400", "#BEC3C7", "#297FB8", "#FFFFCC", "#CCFFFF", "#CC3333", "#FFFF00", "#663366", "#CC0033", "#009966", "#CCFF66", "#336666", "#0099CC"];
     this.bg = colorArray[Math.floor(Math.random() * colorArray.length)];
 }
 
 Circle.prototype = {
     upgrade() {
-        if (this.time > 0) {
-            this.time--;
+        if (this.curTime < this.time) {
+            this.curTime++;
             this.x += this.dx;
             this.y += this.dy;
+            if (this.curTime > this.time / 2) {
+                this.radius = (this.maxRadius * (this.time - this.curTime)) / (this.time / 2);
+            }
         } else {
             this.done = true;
         }
@@ -74,7 +79,7 @@ Circle.prototype = {
         this.ctx.beginPath();
         // this.ctx.strokeStyle = "#777";
 
-        this.ctx.fillStyle = `rgba(${this.bg},${this.time / 10})`;
+        this.ctx.fillStyle = this.bg;
         this.ctx.arc(this.x, this.y, this.radius, (Math.PI / 180) * 0, (Math.PI / 180) * 360, false);
         this.ctx.fill();
     },
