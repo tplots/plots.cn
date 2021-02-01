@@ -15,7 +15,7 @@ let firstFruit = 0;
 const minRandomFruitNum = 0; // 生成随机水果最小值（0-10）
 const maxRandomFruitNum = 5; // 生成随机水果最大值（1-11）
 let setFruits = {
-  startFruits: [0, 0, 1, 2, 2, 3], // 指定前几次生成的水果，可填入任意数量的数字
+  startFruits: [0], // 指定前几次生成的水果，可填入任意数量的数字
   randomFunction: () => {
     return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
   }
