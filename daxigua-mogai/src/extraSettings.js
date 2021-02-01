@@ -9,13 +9,14 @@ let extraScore = 1;
 let wuDi = true;
 
 // 第一个水果：修改数字为 0-10
-let firstFruit = 0;
+let firstFruit = 10;
 
 // 指定生成的水果
-const minRandomFruitNum = 0; // 生成随机水果最小值（0-10）
-const maxRandomFruitNum = 5; // 生成随机水果最大值（1-11）
+const minRandomFruitNum = 6; // 生成随机水果最小值（0-10）
+const maxRandomFruitNum = 11; // 生成随机水果最大值（1-11）
 let setFruits = {
-  startFruits: [0, 0, 1, 2, 2, 3], // 指定前几次生成的水果，可填入任意数量的数字
+  // startFruits: [0, 0, 1, 2, 2, 3], // 指定前几次生成的水果，可填入任意数量的数字
+  startFruits: [10, 10, 9, 8, 8, 7], // 指定前几次生成的水果，可填入任意数量的数字
   randomFunction: () => {
     return minRandomFruitNum + Math.floor(Math.random() * (maxRandomFruitNum - minRandomFruitNum));
   }
