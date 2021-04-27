@@ -1,0 +1,40 @@
+{
+    "name": "webpack-template",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack serve --hot --config build/webpack.dev.conf.js",
+        "start": "npm run dev",
+        "build": "webpack --config ./build/webpack.config.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/core": "^7.13.15",
+        "@babel/plugin-transform-runtime": "^7.13.15",
+        "@babel/preset-env": "^7.13.15",
+        "babel-loader": "^8.2.2",
+        "copy-webpack-plugin": "^8.1.1",
+        "css-loader": "^5.2.4",
+        "css-minimizer-webpack-plugin": "^2.0.0",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.3.1",
+        "mini-css-extract-plugin": "^1.5.0",
+        "optimize-css-assets-webpack-plugin": "^5.0.4",
+        "sass": "^1.32.11",
+        "sass-loader": "^11.0.1",
+        "stats.js": "^0.17.0",
+        "style-loader": "^2.0.0",
+        "svg-sprite-loader": "^6.0.5",
+        "uglifyjs-webpack-plugin": "^2.2.0",
+        "url-loader": "^4.1.1",
+        "webpack": "^5.34.0",
+        "webpack-cli": "^4.6.0",
+        "webpack-dev-server": "^3.11.2"
+    },
+    "dependencies": {
+        "three": "^0.118.3"
+    }
+}

@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    /* background: url('@/assets/images/sprite.jpg') no-repeat; */
+    background: linear-gradient(#e4e0ba, #f7d9aa);
+    background-size: 100% auto;
+}
